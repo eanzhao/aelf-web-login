@@ -21,7 +21,7 @@ jobs:
       contents: write
     steps:
       - name: Run dotnet ci action
-        uses: eanzhao/frontend-ci@v0.0.5
+        uses: eanzhao/frontend-ci@v0.0.6
         with:
           commit-token: ${{ secrets.COMMIT_TOKEN }}
           branch-name: "feature/badge-json"
