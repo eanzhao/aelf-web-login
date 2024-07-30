@@ -20,7 +20,7 @@ jobs:
       pull-requests: write
       contents: write
     steps:
-      - name: Run dotnet ci action
+      - name: Run frontend CI
         uses: eanzhao/frontend-ci@v0.0.8
         with:
           commit-token: ${{ secrets.COMMIT_TOKEN }}
