@@ -13,6 +13,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: [utils]
     permissions:
       pull-requests: write
       contents: write
@@ -23,3 +26,4 @@ jobs:
           commit-token: ${{ secrets.COMMIT_TOKEN }}
           branch-name: "feature/badge-json"
           is-monorepo: true
+          package: ${{ matrix.package }}
