@@ -21,7 +21,7 @@ jobs:
       contents: write
     steps:
       - name: Run frontend CI
-        uses: eanzhao/frontend-ci@v0.0.9
+        uses: eanzhao/frontend-ci@v0.0.10
         with:
           commit-token: ${{ secrets.COMMIT_TOKEN }}
           branch-name: "feature/badge-json"
